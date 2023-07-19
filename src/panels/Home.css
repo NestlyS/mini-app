@@ -1,0 +1,27 @@
+.Header {
+  color: white;
+  background-color: #65A7FB;
+}
+
+.MainBackground {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  background: linear-gradient(#65A7FB, #3A6DF2) !important;
+  overflow:hidden;
+}
+
+.MainTitle {
+  margin: 0 auto;
+  font-size: 50px;
+  font-weight: 700;
+  text-align: center;
+  color: white;
+  filter: drop-shadow(7px 5px 7px rgba(66,107,178, 1));
+}
+
+.SecondTitle {
+  font-size: 25px;
+  font-weigth: 500px;
+  color: #edf3ff;
+}

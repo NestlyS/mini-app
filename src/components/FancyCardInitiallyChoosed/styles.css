@@ -1,0 +1,51 @@
+@keyframes opacityShow {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.FancyCardChooseRoot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 30px;
+  color: white;
+}
+
+.Title {
+  margin-top: 20px;
+  //animation: opacityShow 0.5s;
+  font-size: 40px;
+  font-weight: 700;
+  filter: drop-shadow(3px -4px 5px rgba(40,68,178, 0.8));
+  transition: opacity 0.5s;
+}
+
+.Second {
+  position: relative;
+  top: -15px;
+  font-size: 35px;
+}
+
+.FancyCardChooseGroup {
+  transition: opacity 0.3s;
+}
+
+.FancyCardChooseButtonShare {
+  font-size: 40px !important;
+}
+
+.FancyCardChooseButtonLinkText {
+  position: relative;
+  font-size: 20px;
+  padding: 15px 0 5px 0;
+  text-align: center;
+}
+
+.hidden {
+  opacity: 0;
+}

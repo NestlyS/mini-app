@@ -1,0 +1,125 @@
+.AnimatedAnimatedLinesContainer {
+  position: absolute;
+  top: 5%;
+  left: -16%;
+  width: 130%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow:hidden;
+  transform-origin: center;
+  transform: scale(0);
+  transition: 0.5s;
+}
+
+.AnimatedAnimatedLinesContainer-Opened {
+  transform: scale(1);
+}
+
+.AnimatedLinesContainer {
+  position: absolute;
+  left: 50%;
+  top: 350px;
+  width: 100%;
+}
+
+.AnimatedLine {
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  padding: 0;
+  transform-origin: left center;
+  background-color: rgba(256, 256, 256, 0.3);
+}
+
+.AnimatedLineRotation-1 {
+  transform: rotate(15deg);
+}
+
+.AnimatedLineRotation-2 {
+  transform: rotate(30deg);
+}
+
+.AnimatedLineRotation-3 {
+  transform: rotate(45deg);
+}
+
+.AnimatedLineRotation-4 {
+  transform: rotate(60deg);
+}
+
+.AnimatedLineRotation-5 {
+  transform: rotate(75deg);
+}
+
+.AnimatedLineRotation-6 {
+  transform: rotate(90deg);
+}
+
+.AnimatedLineRotation-7 {
+  transform: rotate(105deg);
+}
+
+.AnimatedLineRotation-8 {
+  transform: rotate(120deg);
+}
+
+.AnimatedLineRotation-9 {
+  transform: rotate(135deg);
+}
+
+.AnimatedLineRotation-10 {
+  transform: rotate(150deg);
+}
+
+.AnimatedLineRotation-11 {
+  transform: rotate(165deg);
+}
+
+.AnimatedLineRotation-12 {
+  transform: rotate(180deg);
+}
+
+.AnimatedLineRotation-13 {
+  transform: rotate(195deg);
+}
+
+.AnimatedLineRotation-14 {
+  transform: rotate(210deg);
+}
+
+.AnimatedLineRotation-15 {
+  transform: rotate(225deg);
+}
+
+.AnimatedLineRotation-16 {
+  transform: rotate(240deg);
+}
+
+.AnimatedLineRotation-17 {
+  transform: rotate(255deg);
+}
+
+.AnimatedLineRotation-18 {
+  transform: rotate(270deg);
+}
+
+.AnimatedLineRotation-19 {
+  transform: rotate(285deg);
+}
+
+.AnimatedLineRotation-20 {
+  transform: rotate(300deg);
+}
+
+.AnimatedLineRotation-21 {
+  transform: rotate(315deg);
+}
+
+.AnimatedLineRotation-22 {
+  transform: rotate(330deg);
+}
+
+.AnimatedLineRotation-23 {
+  transform: rotate(345deg);
+}

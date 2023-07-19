@@ -1,0 +1,21 @@
+.FancyTextShowRoot {
+  width: 60%;
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+  color: white;
+}
+
+.FancyTextShowItem {
+  display: inline-block;
+  opacity: 0;
+  filter: blur(4px);
+}
+
+@keyframes fade-in {
+  100% {
+    opactiy: 1;
+    opacity: 1;
+    filter: blur(0);
+  }
+}
