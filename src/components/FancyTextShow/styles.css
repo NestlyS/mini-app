@@ -7,8 +7,15 @@
 
 }
 
+@media (min-width: 1200px) {
+  .FancyTextShowRoot {
+    font-size: 2vw;
+    padding: 0 20%;
+  }
+}
 
-@media (max-width: 600px) {
+
+@media (max-width: 800px) {
   .FancyTextShowRoot {
     font-size: 6vw;
     padding: 0 2%;

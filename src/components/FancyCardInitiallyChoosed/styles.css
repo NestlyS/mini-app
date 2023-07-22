@@ -18,8 +18,8 @@
 
 .Title {
   margin-top: 20px;
-  //animation: opacityShow 0.5s;
-  font-size: 40px;
+  font-size: 7vw;
+  line-height: 7vw;
   font-weight: 700;
   filter: drop-shadow(3px -4px 5px rgba(40,68,178, 0.8));
   transition: opacity 0.5s;
@@ -32,6 +32,20 @@
   line-height: 7vw;
   text-align: center;
 }
+
+
+@media (min-width: 800px) {
+  .Title {
+    font-size: 5vw;
+    line-height: 5vw;
+  }
+
+  .Second {
+    font-size: 4vw;
+    line-height: 4vw;
+  }
+}
+
 
 .FancyCardChooseGroup {
   transition: opacity 0.3s;

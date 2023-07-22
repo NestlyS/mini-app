@@ -4,8 +4,8 @@
 
 .Container {
   background-color: transparent;
-  height: 300px;
-  width: 200px;
+  height: 34vh;
+  width: 51vw;
   margin: 0 auto;
   padding: 0;
   perspective: 1000px;

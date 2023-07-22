@@ -33,6 +33,12 @@
   white-space: initial;
 }
 
+@media (min-width: 1200px) {
+  .Second {
+    font-size: 2vw;
+  }
+}
+
 .FancyCardChooseGroup {
   transition: opacity 0.3s;
 }
