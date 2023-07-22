@@ -18,17 +18,19 @@
 
 .Title {
   margin-top: 20px;
-  //animation: opacityShow 0.5s;
-  font-size: 40px;
+  font-size: 7vw;
+  line-height: 7vw;
   font-weight: 700;
+  white-space: nowrap;
   filter: drop-shadow(3px -4px 5px rgba(40,68,178, 0.8));
   transition: opacity 0.5s;
 }
 
 .Second {
   position: relative;
-  top: -15px;
-  font-size: 35px;
+  font-size: 7vw;
+  line-height: 7vw;
+  white-space: initial;
 }
 
 .FancyCardChooseGroup {
@@ -42,7 +44,6 @@
 .FancyCardChooseButtonLinkText {
   position: relative;
   font-size: 20px;
-  padding: 15px 0 5px 0;
   text-align: center;
 }
 

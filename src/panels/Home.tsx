@@ -36,8 +36,7 @@ const Home = ({ id, go, fetchedUser }: Props) => {
 
 	return (
 		<Panel id={id}>
-			<PanelHeader fixed shadow className='Header' >Рамблер/Таро
-				<Button onClick={clearCardName}>clearCardName</Button></PanelHeader>
+			<PanelHeader fixed shadow className='Header' >Рамблер/Таро</PanelHeader>
 			{fetchedUser &&
 				<Group header={<Header mode="secondary">User Data Fetched with VK Bridge</Header>}>
 					<Cell

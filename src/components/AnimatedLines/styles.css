@@ -21,6 +21,8 @@
   left: 50%;
   top: 350px;
   width: 100%;
+  animation: rotation360 240s infinite linear;
+  transform-origin: left;
 }
 
 .AnimatedLine {
@@ -122,4 +124,14 @@
 
 .AnimatedLineRotation-23 {
   transform: rotate(345deg);
+}
+
+@keyframes rotation360 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }

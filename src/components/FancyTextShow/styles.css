@@ -1,9 +1,18 @@
 .FancyTextShowRoot {
-  width: 60%;
-  font-size: 30px;
+  padding: 0 10%;
+  font-size: 3vw;
   font-weight: 400;
   text-align: center;
   color: white;
+
+}
+
+
+@media (max-width: 600px) {
+  .FancyTextShowRoot {
+    font-size: 6vw;
+    padding: 0 2%;
+  }
 }
 
 .FancyTextShowItem {
@@ -14,8 +23,7 @@
 
 @keyframes fade-in {
   100% {
-    opactiy: 1;
     opacity: 1;
-    filter: blur(0);
+    filter: blur(0) drop-shadow(3px 3px 3px rgba(255,255,178, 0.5));
   }
 }

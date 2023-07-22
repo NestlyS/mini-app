@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5c39c518.css",
+    "main.js": "/static/js/main.dea21109.js",
+    "static/media/Обложка.png": "/static/media/Обложка.5f97ab16f3f463ecbe7a.png",
+    "static/media/Звезда.png": "/static/media/Звезда.cd87a8d853cda56ee74e.png",
+    "static/media/Умеренность.png": "/static/media/Умеренность.b2255024858c102f6c6c.png",
+    "static/media/Дьявол.png": "/static/media/Дьявол.8327796de1fae8e43d5c.png",
+    "static/media/Солнце.png": "/static/media/Солнце.24c23f46e70e8e008933.png",
+    "static/media/Луна.png": "/static/media/Луна.802cd28509c243b68860.png",
+    "static/media/Мир.png": "/static/media/Мир.64ebe36541d282517622.png",
+    "static/media/Башня.png": "/static/media/Башня.16322e5959748d93f8be.png",
+    "static/media/Колесница.png": "/static/media/Колесница.597b4eb165fa65071015.png",
+    "static/media/Влюбленные.png": "/static/media/Влюбленные.5b485870bc7ac12fe133.png",
+    "static/media/Колесо фортуны.png": "/static/media/Колесо фортуны.27cc676dd31b0536512d.png",
+    "static/media/Повешенный.png": "/static/media/Повешенный.55353f3eac8c9e8dfd2f.png",
+    "static/media/Смерть.png": "/static/media/Смерть.cb26d2e5bed8f3b67f99.png",
+    "static/media/Справедливость.png": "/static/media/Справедливость.2e9a82befeece6deb94c.png",
+    "static/media/Отшельник.png": "/static/media/Отшельник.3095063b1100124bbb65.png",
+    "static/media/Суд.png": "/static/media/Суд.15a03d516e9d2e934dbb.png",
+    "static/media/Иерофант.png": "/static/media/Иерофант.b9f225fb7216634c5610.png",
+    "static/media/Сила.png": "/static/media/Сила.f0a95b79b50a708d9009.png",
+    "static/media/Маг.png": "/static/media/Маг.959ce1d51a476e571691.png",
+    "static/media/Шут.png": "/static/media/Шут.a941d6659e7567508c57.png",
+    "static/media/Верховная жрица.png": "/static/media/Верховная жрица.0f5b053cc75956c7a076.png",
+    "static/media/Император.png": "/static/media/Император.566561535d24ee7698da.png",
+    "static/media/Императрица.png": "/static/media/Императрица.25fedebd95ed5bc65186.png",
+    "static/media/persik.png": "/static/media/persik.ae9f00727841e011ac15.png",
+    "static/media/horoscopes.svg": "/static/media/horoscopes.ffbacaa48326b4e70f12800cb338e337.svg",
+    "static/media/rambler.svg": "/static/media/rambler.d7ae3363987ed975add019ba9e5dee3a.svg",
+    "index.html": "/index.html",
+    "main.5c39c518.css.map": "/static/css/main.5c39c518.css.map",
+    "main.dea21109.js.map": "/static/js/main.dea21109.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5c39c518.css",
+    "static/js/main.dea21109.js"
+  ]
+}

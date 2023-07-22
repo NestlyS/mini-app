@@ -13,15 +13,31 @@
 
 .MainTitle {
   margin: 0 auto;
-  font-size: 50px;
+  font-size: 8vw;
+  line-height: 8vw;
   font-weight: 700;
   text-align: center;
   color: white;
   filter: drop-shadow(7px 5px 7px rgba(66,107,178, 1));
 }
 
+
 .SecondTitle {
-  font-size: 25px;
+  font-size: 4vw;
   font-weigth: 500px;
   color: #edf3ff;
+}
+
+@media (max-width: 600px) {
+  .MainTitle {
+    font-size: 10vw;
+    line-height: 10vw;
+  }
+
+  
+  .SecondTitle {
+    font-size: 7vw;
+    font-weigth: 500px;
+    color: #edf3ff;
+  }
 }

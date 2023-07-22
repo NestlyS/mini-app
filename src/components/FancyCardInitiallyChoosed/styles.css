@@ -28,7 +28,9 @@
 .Second {
   position: relative;
   top: -15px;
-  font-size: 35px;
+  font-size: 7vw;
+  line-height: 7vw;
+  text-align: center;
 }
 
 .FancyCardChooseGroup {
@@ -41,8 +43,7 @@
 
 .FancyCardChooseButtonLinkText {
   position: relative;
-  font-size: 20px;
-  padding: 15px 0 5px 0;
+  font-size: 16px;
   text-align: center;
 }
 

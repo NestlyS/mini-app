@@ -50,7 +50,6 @@ export const FancyCardChoose = ({ card }: Props) => {
       <Title level='2' className={cn('Title', 'Second', step < 2 && 'hidden')} onTransitionEnd={onSecondTextShow}>Ваше предсказание на неделю:</Title>
       <FancyTextShow text={intepretation} onFinish={onLongTextShow} isHidden={step < 3} />
       <Group padding='m' mode='card' className={cn('FancyCardChooseGroup', step < 4 && 'hidden')}>
-        <Button size="l" stretched className='FancyCardChooseButtonShare'>Поделиться</Button>
         <Text className='FancyCardChooseButtonLinkText'>Больше гороскопов на</Text>
         <a href="https://horoscopes.rambler.ru/" target='_blank' rel="noreferrer">
           <img src={ramblerSvg} />
