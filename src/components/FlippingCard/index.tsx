@@ -72,16 +72,24 @@ export const FlippingCard = ({ cardType, onOpen, isInitiallyOpened = false }: Pr
 			if (newVal) onOpen?.();
 			return newVal;
 		});
-	}, []);
+	}, [onOpen]);
 
 	return (
-		<Div className={`Container ${isOpened ? 'opened' : ''}`}>
-			<Div className='SecondContainer'>
-				<Div className={`Front`}>
-					<img src={back} className='Card' onClick={onImageClick} />
-				</Div>
-				<Div className={`Back`}>
-					<img src={URL_TO_ENUM_MAP[cardType]} className='Card' />
+		<Div className='CardRoot'>
+			<Div className={`BackCard Left ${isOpened ? '' : 'Animated'}`}>
+				<img src={back} className='Card' />
+			</Div>
+			<Div className={`BackCard Right ${isOpened ? '' : 'Animated'}`}>
+				<img src={back} className='Card' />
+			</Div>
+			<Div className={`Container ${isOpened ? 'opened' : ''}`}>
+				<Div className='SecondContainer'>
+					<Div className={`Front`}>
+						<img src={back} className='Card' onClick={onImageClick} />
+					</Div>
+					<Div className={`Back`}>
+						<img src={URL_TO_ENUM_MAP[cardType]} className='Card' />
+					</Div>
 				</Div>
 			</Div>
 		</Div>

@@ -1,3 +1,7 @@
+.Root *{
+  font-family: "Montserrat" !important;
+}
+
 .Header {
   color: black;
 }
@@ -6,7 +10,7 @@
   display: flex;
   flex-direction: column;
   row-gap: 20px;
-  background: linear-gradient(#65A7FB, #3A6DF2) !important;
+  background: linear-gradient(140deg, #65A7FB 50% , #3A6DF2) !important;
   overflow:hidden;
 }
 
@@ -24,6 +28,7 @@
 .SecondTitle {
   font-size: 4vw;
   font-weigth: 500px;
+  line-height: 6vw;
   color: #edf3ff;
 }
 

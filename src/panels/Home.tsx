@@ -11,45 +11,30 @@ import { clearCardName, pickRandomCard, readCardNameToLocalStorage } from '../co
 import { FancyCardInitiallyChoosed } from '../components/FancyCardInitiallyChoosed';
 
 type Props = {
-	id: string,
-	go: () => void,
-	fetchedUser: {
-		photo_200: string,
-		first_name: string,
-		last_name: string,
-		city: {
-			title: string,
-		},
-	},
+	id: string
 }
 
-const Home = ({ id, go, fetchedUser }: Props) => {
+const Home = ({ id }: Props) => {
+	const [rerenderKey, setKey] = useState(0);
+
 	const [card, isReaded] = useMemo(() => {
 		const readedCard = readCardNameToLocalStorage();
 		console.log(readedCard);
 		if (readedCard) return [readedCard, true];
 		return [pickRandomCard(), false];
+	}, [rerenderKey]);
+
+	const onClear = useCallback(() => {
+		clearCardName();
+		setKey(val => val + 1);
 	}, []);
 
-	console.log(card, isReaded)
-
-
 	return (
-		<Panel id={id}>
-			<PanelHeader fixed shadow className='Header' >Рамблер/Таро</PanelHeader>
-			{fetchedUser &&
-				<Group>
-					<Cell
-						before={fetchedUser.photo_200 ? <Avatar src={fetchedUser.photo_200} /> : null}
-					>
-						{`${fetchedUser.first_name} ${fetchedUser.last_name}`}
-					</Cell>
-				</Group>}
-
+		<Panel id={id} className='Root'>
 			<Div className='MainBackground'>
-				<Title level='1' className={cn('MainTitle')}>Рамблер / Таро</Title>
-				<Title level='2' className={cn('MainTitle', 'SecondTitle')}>Узнай свою судьбу</Title>
-				{isReaded ? <FancyCardInitiallyChoosed card={card} /> : <FancyCardChoose card={card} />}
+				<Title level='1' className={cn('MainTitle')}>Таро на неделю</Title>
+				<Title level='2' className={cn('MainTitle', 'SecondTitle')}>{isReaded ? 'Ваше предсказание готово' : 'Кликни на колоду'}</Title>
+				{isReaded ? <FancyCardInitiallyChoosed card={card} onClear={onClear} /> : <FancyCardChoose key={rerenderKey} card={card} onClear={onClear} />}
 			</Div>
 		</Panel>
 	)

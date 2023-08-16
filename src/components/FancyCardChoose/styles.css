@@ -41,16 +41,42 @@
 
 .FancyCardChooseGroup {
   transition: opacity 0.3s;
+  z-index: 2;
 }
 
 .FancyCardChooseButtonShare {
   font-size: 40px !important;
 }
 
+.FancyCardResetButton {
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 20px !important;
+  font-weight: 600;
+  color: #3A6DF2;
+  border: none;
+  transition: 0.2s;
+}
+
+.FancyCardResetButton:hover {
+  background-color: #DDDDDD !important;
+}
+
+.FancyCardResetButton:active {
+  background-color: #AAAAAA !important;
+}
+
 .FancyCardChooseButtonLinkText {
   position: relative;
-  font-size: 20px;
-  text-align: center;
+  padding-top: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+}
+
+.FancyCardChooseButtonLink {
+  padding: 5px 15px;
 }
 
 .hidden {

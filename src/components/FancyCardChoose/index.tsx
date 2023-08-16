@@ -13,9 +13,10 @@ import { getCardIntrepretation, writeCardNameToLocalStorage } from './utils';
 
 type Props = {
   card: CardTypes;
+  onClear: () => void;
 }
 
-export const FancyCardChoose = ({ card }: Props) => {
+export const FancyCardChoose = ({ card, onClear }: Props) => {
   const [step, setStep] = useState(0);
 
   const onOpen = useCallback(() => {
@@ -39,23 +40,26 @@ export const FancyCardChoose = ({ card }: Props) => {
 
   const intepretation = useMemo(() => card ? getCardIntrepretation(card) : '', [card]);
 
-  console.log(card, step);
   if (!card) return null;
 
   return (
-    <Div className='FancyCardChooseRoot'>
+    <>
+      <Div className='FancyCardChooseRoot'>
+        <FlippingCard cardType={card} onOpen={onOpen} isInitiallyOpened={false} />
+        <Title level='1' className={cn('Title', step < 1 && 'hidden')} onTransitionEnd={onTextShow}>{card}</Title>
+        <Title level='2' className={cn('Title', 'Second', step < 2 && 'hidden')} onTransitionEnd={onSecondTextShow}>Ваше предсказание на неделю:</Title>
+        <FancyTextShow text={intepretation} onFinish={onLongTextShow} isHidden={step < 3} />
+
+        <Group padding='m' mode='plain' className={cn('FancyCardChooseGroup', step < 4 && 'hidden')}>
+          <button onClick={onClear} className='FancyCardResetButton'>Сбросить гадание</button>
+          <Text className='FancyCardChooseButtonLinkText'>Больше гороскопов на</Text>
+          <a href="https://horoscopes.rambler.ru/" target='_blank' rel="noreferrer" className='FancyCardChooseButtonLink'>
+            <img src={ramblerSvg} />
+            <img src={horoSvg} />
+          </a>
+        </Group>
+      </Div>
       <AnimatedLines isOpened={step >= 1} />
-      <FlippingCard cardType={card} onOpen={onOpen} isInitiallyOpened={false} />
-      <Title level='1' className={cn('Title', step < 1 && 'hidden')} onTransitionEnd={onTextShow}>{card}</Title>
-      <Title level='2' className={cn('Title', 'Second', step < 2 && 'hidden')} onTransitionEnd={onSecondTextShow}>Ваше предсказание на неделю:</Title>
-      <FancyTextShow text={intepretation} onFinish={onLongTextShow} isHidden={step < 3} />
-      <Group padding='m' mode='card' className={cn('FancyCardChooseGroup', step < 4 && 'hidden')}>
-        <Text className='FancyCardChooseButtonLinkText'>Больше гороскопов на</Text>
-        <a href="https://horoscopes.rambler.ru/" target='_blank' rel="noreferrer">
-          <img src={ramblerSvg} />
-          <img src={horoSvg} />
-        </a>
-      </Group>
-    </Div>
+    </>
   )
 }

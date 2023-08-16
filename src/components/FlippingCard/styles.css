@@ -1,3 +1,100 @@
+@keyframes leftCardAnimation {
+  45%{
+    transform: rotate(355deg);
+  }
+
+  50% {
+    transform: rotate(352deg);
+  }
+
+  55%{
+    transform: rotate(355deg);
+  }
+
+  60% {
+    transform: rotate(352deg);
+  }
+
+  65%{
+    transform: rotate(355deg);
+  }
+
+  70% {
+    transform: rotate(352deg);
+  }
+
+  75%{
+    transform: rotate(355deg);
+  }
+}
+
+@keyframes rightCardAnimation {
+  45%{
+    transform: rotate(8deg);
+  }
+
+  50% {
+    transform: rotate(11deg);
+  }
+
+  55%{
+    transform: rotate(8deg);
+  }
+
+  60% {
+    transform: rotate(11deg);
+  }
+
+  65%{
+    transform: rotate(8deg);
+  }
+
+  70% {
+    transform: rotate(11deg);
+  }
+
+  75%{
+    transform: rotate(8deg);
+  }
+}
+
+.CardRoot {
+  position: relative;
+}
+
+.BackCard {
+  position: absolute;
+  height: 34vh;
+  transform-origin: bottom;
+
+  @media (min-width: 800px) {
+    height: 48vh;
+  }
+}
+
+.Left {
+  top: -1vh;
+  left: -15%;
+  margin: 0 auto;
+  transform: rotate(355deg);
+
+}
+
+.Right {
+  top: -0vh;
+  left: 8%;
+  margin: 0 auto;
+  transform: rotate(8deg);
+}
+
+.Left.Animated {
+  animation: 6s ease-in 0s infinite leftCardAnimation;
+}
+
+.Right.Animated {
+  animation: 6s ease-in 0s infinite rightCardAnimation;
+}
+
 .Card {
   height: 100%;
 }
@@ -5,10 +102,16 @@
 .Container {
   background-color: transparent;
   height: 34vh;
-  width: 51vw;
+  width: 22vh;
   margin: 0 auto;
   padding: 0;
   perspective: 1000px;
+
+  
+  @media (min-width: 800px) {
+    height: 48vh;
+    width: 24vh;
+  }
 }
 
 .SecondContainer {
